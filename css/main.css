@@ -1,23 +1,48 @@
+@font-face {
+    font-family: 'bebas_neue_bold';
+    src: url('/fonts/bebasneuebold-webfont.eot');
+    src: url('/fonts/bebasneuebold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/fonts/bebasneuebold-webfont.woff2') format('woff2'),
+         url('/fonts/bebasneueregular-webfont.woff') format('woff'),
+         url('/fonts/bebasneueregular-webfont.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'bebas neue';
+    src: url('/fonts/bebasneueregular-webfont.eot');
+    src: url('/fonts/bebasneueregular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/fonts/bebasneueregular-webfont.woff2') format('woff2'),
+         url('/fonts/bebasneueregular-webfont.woff') format('woff'),
+         url('/fonts/bebasneueregular-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 body {
     font-family: 'Open Sans', sans-serif;
 }
 
+/* ---- header-top ---- */
+
 .header-top {
-    background-color: #212121;
-    
+    background-color: #212121;    
 }
 .header-top-wrapper {    
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 40px;
+    padding: .5rem 1rem;
 }
 .header-top__list {
     display: flex;
     padding: 0;
     list-style: none;
     justify-content: space-between;
-    flex-basis: 65%;
+    flex-basis: 55%;
     margin: 0;
 }
 .header-top__item {
@@ -35,4 +60,75 @@ body {
 }
 .social__item {
     display: inline-block;
+}
+
+/* ---- main-nav ---- */
+.main-nav {
+    height: 80px;
+    display: flex;
+    align-items: center;
+    background: linear-gradient(#FFD501, #FFED01);
+    box-shadow: 0 1px 5px #212121c7;
+}
+.main-nav-wrapper {
+    display: flex;
+    justify-content: space-between;   
+    padding: .5rem 1rem; 
+    align-items: center;    
+}
+.logo {
+    display: flex;    
+    text-decoration: none;       
+}
+.logo:hover {
+    opacity: 0.8;   
+}
+.logo__text {
+    text-align: center;
+    margin-left: 5px;
+}
+.logo__title {
+    font-family: 'bebas neue';
+    font-size: 33px;
+    margin: 0;
+    font-weight: bold;
+    color: #D6197E;
+}
+.logo__subtitle {
+    margin: 0;
+    font-size: 13px;
+    line-height: 0;
+    color: #212121;
+}
+
+.main-nav__list {
+    display: flex;
+    padding: 0;
+    list-style: none;
+    justify-content: space-between;
+    
+    flex-basis: 50%;
+    margin: 0;
+}
+.main-nav__link {
+    font-family: 'bebas neue';
+    font-size: 25px;
+    text-decoration: none;
+    color: #212121;
+    position: relative;    
+}
+.main-nav__item::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: #212121;
+    transform: scale(0);
+    transition: all 0.2s;
+}
+.main-nav__item:hover::after,
+.main-nav__item:active::after,
+.main-nav__item:focus::after {
+    transform: scale(1);
+       
 }
