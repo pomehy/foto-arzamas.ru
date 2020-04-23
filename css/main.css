@@ -1,0 +1,38 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.header-top {
+    background-color: #212121;
+    
+}
+.header-top-wrapper {    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 40px;
+}
+.header-top__list {
+    display: flex;
+    padding: 0;
+    list-style: none;
+    justify-content: space-between;
+    flex-basis: 65%;
+    margin: 0;
+}
+.header-top__item {
+    display: inline-block;
+    color: #ffffff;
+    font-size: 13px;
+}
+.social {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-basis: 5%;
+    padding: 0;
+    margin: 0;
+}
+.social__item {
+    display: inline-block;
+}
