@@ -25,10 +25,6 @@ body {
     font-family: 'Open Sans', sans-serif;
 }
 
-a {
-    text-decoration: none;
-}
-
 /* ---- header-top ---- */
 
 .header-top {
@@ -85,7 +81,7 @@ a {
     text-decoration: none;       
 }
 .logo:hover {
-    opacity: 0.8;   
+    
 }
 .logo__text {
     text-align: center;
@@ -136,6 +132,61 @@ a {
     transform: scale(1);       
 }
 
+.about {
+    background-color: #F7F7F7;
+    padding: 30px 0;
+}
+
+.about-image-wrapper {    
+    display: flex;
+    height: 100%; 
+    align-items: center;   
+}
+
+.about__image {
+    display: block;    
+}
+.about__title {
+    font-family: 'bebas neue';
+    font-size: 40px;   
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;     
+}
+
+
+.about__small-text {
+    font-size: 18px; 
+    background-color: #D6197E;
+    color: #ffffff; 
+    padding: 5px 10px; 
+    text-align: center; 
+    
+}
+.features {
+    list-style: none;
+    padding: 0;
+}
+.features__title {
+    font-size: 18px;
+    text-transform: uppercase;
+    border-bottom: 2px solid #D6197E;    
+}
+.features__text {
+    color: #212121;
+    font-size: 14px;
+    margin-top: 10px;
+    margin-bottom: 25px;    
+}
+.features__number {
+    background-color: #D6197E;
+    padding: 0 10px;  
+    color: #ffffff;    
+}
+.features__item {
+    
+}
 .offer {
     padding: 30px 0;    
 }
