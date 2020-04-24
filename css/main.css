@@ -25,6 +25,10 @@ body {
     font-family: 'Open Sans', sans-serif;
 }
 
+a {
+    text-decoration: none;
+}
+
 /* ---- header-top ---- */
 
 .header-top {
@@ -129,6 +133,56 @@ body {
 .main-nav__item:hover::after,
 .main-nav__item:active::after,
 .main-nav__item:focus::after {
-    transform: scale(1);
-       
+    transform: scale(1);       
+}
+
+.offer {
+    padding: 30px 0;    
+}
+.offer-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.offer__title {
+    font-family: 'bebas neue';
+    font-size: 35px;   
+    margin-bottom: 15px; 
+}
+.offer__list {
+    display: flex;    
+    list-style: none;
+    justify-content: space-between;
+    flex-wrap: wrap; 
+    padding: 0;      
+}
+
+.offer__card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid black;
+    margin-bottom: 30px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.offer__name {
+    font-size: 1.8em;
+    margin-top: 10px; 
+    margin-bottom: 10px;
+    font-family: 'bebas neue';
+}
+
+.offer__description {
+    margin: 0 0 1em 0;
+}
+.button {
+    border-radius: 0.4em;
+}
+.offer__link {
+    width: 100%;
+    border: 1px solid   black;
+    padding: 15px 0;
 }
