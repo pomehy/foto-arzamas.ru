@@ -25,9 +25,30 @@ body {
     font-family: 'Open Sans', sans-serif;
     font-weight: 300;
 }
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    border: 0;
+    clip: rect(0 0 0 0)
+}
+.section-padding {
+    padding: 40px 0;
+}
+.section-title {
+    font-size: 40px;
+    font-family: 'bebas neue';    
+    margin-bottom: 25px;
+    text-align: center;
+}
 
 /* ---- header-top ---- */
-
+.page-header {
+    box-shadow: 0 1px 5px #212121c7;
+}
 .header-top {
     background-color: #212121;    
 }
@@ -51,6 +72,34 @@ body {
     color: #ffffff;
     font-size: 13px;
 }
+.header-top__link {
+    padding: 5px 10px;
+    /* border: 1px solid #ffffff; */
+    background-color: #FFD501;
+    color: #212121;
+    text-decoration: none;
+    border-radius: 6px;
+    font-size: 13px;  
+    animation: glowing 2000ms infinite;     
+}
+.header-top__link:hover {
+    opacity: 0.8;
+}
+
+@keyframes glowing {
+    0% { 
+        background-color: #FFED01;
+    }  
+    
+    50% {        
+        box-shadow: 0 0 15px #D6197E;
+    }  
+     
+    100% {
+        background-color: #FFED01;
+    }
+  }
+
 .social {
     display: flex;
     align-items: center;
@@ -61,6 +110,10 @@ body {
 }
 .social__item {
     display: inline-block;
+    margin-left: 5px;
+}
+.social__icon:hover {
+    opacity: 0.8;
 }
 
 /* ---- main-nav ---- */
@@ -68,9 +121,14 @@ body {
     height: 80px;
     display: flex;
     align-items: center;
-    background: linear-gradient(#FFD501, #FFED01);
-    box-shadow: 0 1px 5px #212121c7;
+    background-color: #ffffff;
+    background: url(/img/pattern-opacity.svg), linear-gradient(#FFD501, #FFED01); 
+    background-position: 75px 125px, center;
+    background-clip: padding-box;
+    background-origin: border-box;
+    background-size: 130px, cover;
 }
+
 .main-nav-wrapper {
     display: flex;
     justify-content: space-between;   
@@ -101,6 +159,7 @@ body {
     line-height: 0;
     color: #212121;
 }
+
 
 .main-nav__list {
     display: flex;
@@ -133,8 +192,23 @@ body {
     transform: scale(1);       
 }
 
-.about {    
-    padding: 30px 0;
+.intro {
+    display: flex;
+    height: 100vh;
+    background-image: url(/img/content-img/intro-bg-1.jpg);
+    background-attachment: fixed;
+}
+.intro__title {
+    font-size: 40px;
+    color: #ffffff;
+    font-family: 'bebas neue';
+}
+
+.intro__content {
+    background-color: #2121217c;
+    margin: auto;
+    height: 300px;
+    
 }
 
 .about-image-wrapper {    
@@ -144,13 +218,8 @@ body {
     height: 100%;
            
 }
-.about__title {
-    font-family: 'bebas neue';
-    font-size: 40px;   
-    margin-bottom: 15px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;     
+.about__title {    
+       
 }
 
 .about__small-text {
@@ -185,8 +254,7 @@ body {
 .features__item {
     
 }
-.offer {
-    padding: 30px 0;
+.offer {    
     background-color: #F7F7F7;    
 }
 .offer-wrapper {
@@ -195,9 +263,7 @@ body {
     align-items: center;
 }
 .offer__title {
-    font-family: 'bebas neue';
-    font-size: 35px;   
-    margin-bottom: 15px;     
+       
 }
 .offer__list {
     display: flex;    
@@ -247,7 +313,7 @@ body {
     color: #212121;
 }
 .reviews {
-    padding: 30px 0;    
+      
 }
 .reviews-content-wrapper {
     display: flex;
@@ -255,10 +321,7 @@ body {
     align-items: center;
 }
 .reviews__title {
-    font-family: 'bebas neue';
-    font-size: 35px;   
-    margin-bottom: 15px;
-    text-align: center;   
+      
 }
 .reviews-slider-wrapper {
     display: flex;
