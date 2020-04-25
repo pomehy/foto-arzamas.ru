@@ -173,7 +173,12 @@
             <div class="reviews-content-wrapper container">
                 <h2 class="reviews__title">Отзывы наших клиентов</h2>
                 <div class="reviews-slider-wrapper">
-                    <div id="reviews-slider-id" class="carousel slide reviews-slider" data-ride="carousel">
+                    <a class="reviews-slider__control" href="#reviews-slider-id" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon reviews-slider__control-icon"
+                            aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <div id="reviews-slider-id" class="carousel slide reviews-slider" data-ride="carousel">                        
                         <ul class="carousel-inner reviews-slider__list">
                             <li class="carousel-item reviews-slider__item active">
                                 <div class="reviews__autor autor">
@@ -227,8 +232,13 @@
                                     </blockquote>
                                 </div>
                             </li>
-                        </ul>                        
+                        </ul>
                     </div>
+                    <a class="reviews-slider__control" href="#reviews-slider-id" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon reviews-slider__control-icon reviews-slider__control-icon--mirror"
+                            aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
                 </div>                
                 </ul>
             </div>

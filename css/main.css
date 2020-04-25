@@ -167,6 +167,7 @@ body {
 }
 .features__title {
     font-size: 18px;
+    
     text-transform: uppercase;
     border-bottom: 2px solid #D6197E;    
 }
@@ -174,7 +175,7 @@ body {
     color: #212121;
     font-size: 14px;
     margin-top: 10px;
-    margin-bottom: 25px;    
+    margin-bottom: 25px;        
 }
 .features__number {
     background-color: #D6197E;
@@ -259,8 +260,7 @@ body {
 }
 .autor {
     display: flex;
-    padding: 15px;
-    border: 1px solid black;
+    padding: 15px;    
     align-items: center;
 }
 .autor__photo {
@@ -273,4 +273,18 @@ body {
     display: block;
     padding: 0 15px;
     margin: 0;
+}
+.reviews-slider__control {    
+    display: flex;    
+    align-items: center;
+    padding: 0 20px;
+}
+.reviews-slider__control-icon {
+    background-image: url(/img/arrow-slider.png);
+    width: 20px;
+    height: 50px; 
+}
+
+.reviews-slider__control-icon--mirror {
+    transform: scale(-1, 1);
 }
