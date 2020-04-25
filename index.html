@@ -11,7 +11,7 @@
     <title>Фотосалон "Яркие Фото"</title>    
 </head>
 <body>
-    <header class="page-header">
+    <header class="page-header"> 
         <div class="header-top">
             <div class="header-top-wrapper container">
                 <ul class="header-top__list">
@@ -63,34 +63,14 @@
     <main class="page-main">
         <section class="about">
             <div class="about-wrapper container">
-                <div class="row">
-                    <div class="col-md-6">
-                        <div class="about-image-wrapper">
-                            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">                                
-                                <div class="carousel-inner">
-                                  <div class="carousel-item about-slider__item active">
-                                    <img class="d-block w-100" src="img/content-img/XXL (2).jpg" alt="Первый слайд">
-                                  </div>
-                                  <div class="carousel-item about-slider__item">
-                                    <img class="d-block w-100" src="img/content-img/XXL (3).jpg" alt="Второй слайд">
-                                  </div>
-                                  <div class="carousel-item about-slider__item">
-                                    <img class="d-block w-100" src="img/content-img/XXL.jpg" alt="Третий слайд">
-                                  </div>
-                                </div>
-                                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                  <span class="sr-only">Previous</span>
-                                </a>
-                                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-                                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                  <span class="sr-only">Next</span>
-                                </a>
-                            </div>                            
+                <h2 class="about__title">Фотосалон "Яркие фото"<span class="about__small-text">5 фактов</span></h2>
+                <div class="row">                    
+                    <div class="col-lg-6">
+                        <div class="about-image-wrapper">                           
+                            
                         </div>                        
                     </div>
-                    <div class="about__text col-md-6">
-                        <h2 class="about__title">Фотосалон "Яркие фото"<span class="about__small-text">5 фактов</span></h2>                        
+                    <div class="about__text col-lg-6">                                               
                         <ul class="about__list features">
                             <li class="features__item">
                                 <h3 class="features__title"><span class="features__number">1</span> Работаем для вас с 2010 года</h3>
@@ -116,15 +96,13 @@
                             </li>
                         </ul>
                     </div>
-                </div>    
-
+                </div> 
             </div>
         </section>
         <section class="offer">
             <div class="offer-wrapper container">
                 <h2 class="offer__title">Наши услуги</h2>
-                <ul class="offer__list row">
-                    <li class="offer__item col-md-6 col-lg-3">
+                <ul class="offer__list row">                    <li class="offer__item col-md-6 col-lg-3">
                         <div class="offer__card">
                             <img class="offer__image" src="http://placehold.it/220x200" alt="" width="100%">
                             <h3 class="offer__name">Текстиль с фото</h3>
@@ -188,6 +166,70 @@
                             <a class="offer__link button" href="#">Подробнее</a>
                         </div>
                     </li>
+                </ul>
+            </div>
+        </section>
+        <section class="reviews">
+            <div class="reviews-content-wrapper container">
+                <h2 class="reviews__title">Отзывы наших клиентов</h2>
+                <div class="reviews-slider-wrapper">
+                    <div id="reviews-slider-id" class="carousel slide reviews-slider" data-ride="carousel">
+                        <ul class="carousel-inner reviews-slider__list">
+                            <li class="carousel-item reviews-slider__item active">
+                                <div class="reviews__autor autor">
+                                    <img class="autor__photo" src="img/content-img/autor_photo-1.jpg" alt="..." width="200">
+                                    <blockquote class="autor__content">
+                                        <cite class="autor__name">Лена Сова</cite>
+                                        <p class="autor__text">Нам ваш салон, помог украсить детский праздник) Заявку
+                                            делали через интернет, обработали всё во время и учли все пожелания) И цены
+                                            у вас не кусаются😊 Будем обращаться к вам ещё👍
+                                        </p>
+                                    </blockquote>
+                                </div>
+                            </li>
+                            <li class="carousel-item reviews-slider__item">
+                                <div class="reviews__autor autor">
+                                    <img class="autor__photo" src="img/content-img/autor_photo-1.jpg" alt="..." width="200">
+                                    <blockquote class="autor__content">
+                                        <cite class="autor__name">Елена Иваненко</cite>
+                                        <p class="autor__text">заказы делаю давно))) все приходит очень быстро, качество
+                                            супер, и цена радует)))) Ребята , вы большие смолодцы💋💋💋 я ваша клиентка
+                                            на веки👍👍👍
+                                        </p>
+                                    </blockquote>
+                                </div>
+                            </li>
+                            <li class="carousel-item reviews-slider__item">
+                                <div class="reviews__autor autor">
+                                    <img class="autor__photo"src="img/content-img/autor_photo-1.jpg" alt="..." width="200">
+                                    <blockquote class="autor__content">
+                                        <cite class="autor__name">Мария Шокурова</cite>
+                                        <p class="autor__text">Сервис действительно на высшем уровне. Кто бы не работал,
+                                            общение всегда доброе, вежливое и веселое. Приятно, когда, особенно в конце
+                                            рабочего дня, уходишь не только с хорошим результатом, но и отличным
+                                            настроением. Спасибо. Так держать.
+                                        </p>
+                                    </blockquote>
+                                </div>
+                            </li>
+                            <li class="carousel-item reviews-slider__item">
+                                <div class="reviews__autor autor">
+                                    <img class="autor__photo" src="img/content-img/autor_photo-1.jpg" alt="..." width="200">
+                                    <blockquote class="autor__content">
+                                        <cite class="autor__name">Елена Иваненко</cite>
+                                        <p class="autor__text">Мои любимые "Яркие фото", в очередной раз огромное
+                                            спасибо вам за быструю и качественную работу!❤ Я попробовала визитки, фото,
+                                            футболку с принтом, открытку по моему эскизу, теперь это печать на сумках и
+                                            значки!👍 И всё всегда оперативно, качественно и в лучшем виде.😁
+                                            Вы очень крутые!👏 Благодарных клиентов вам, смелых идей, свежих решений и
+                                            постоянных заказов!💕
+                                        </p>
+                                    </blockquote>
+                                </div>
+                            </li>
+                        </ul>                        
+                    </div>
+                </div>                
                 </ul>
             </div>
         </section>
