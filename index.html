@@ -11,24 +11,25 @@
     <title>Фотосалон "Яркие Фото"</title>    
 </head>
 <body>
-    <header class="page-header"> 
+    <header class="page-header fixed-top"> 
         <div class="header-top">
             <div class="header-top-wrapper container">
                 <ul class="header-top__list">
                     <li class="header-top__item">г. Арзамас</li>
                     <li class="header-top__item">Ежедневно | 9:00 - 20:00</li>
                     <li class="header-top__item">+7 (920) 019 75 65</li>
-                    <li class="header-top__item">yarkie-foto@mail.ru</li>
+                    <li class="header-top__item">yarkie-foto@mail.ru</li>                    
                 </ul>
+                <a class="header-top__link" href="#">Задать вопрос</a>
                 <ul class="social">
                     <li class="social__item">
-                        <a class="social__link" href="#">
-                            <img class="social__icon" src="img/vk-logo.svg" alt="">
+                        <a class="social__link" href="https://vk.com/yarkie_foto_plaza" target="_blank">
+                            <img class="social__icon" src="img/vk-logo.svg" alt="Логотип Вконтакте" width="26" height="26">
                         </a>
                     </li>
                     <li class="social__item">
-                        <a class="social__link" href="#">
-                            <img class="social__icon" src="img/instagram-logo.svg" alt="">
+                        <a class="social__link" href="https://www.instagram.com/yarkiefoto" target="_blank">
+                            <img class="social__icon" src="img/instagram-logo.svg" alt="Логотип Instagram" width="26" height="26">
                         </a>
                     </li>
                 </ul>
@@ -61,9 +62,16 @@
         </nav>
     </header>
     <main class="page-main">
-        <section class="about">
+        <h1 class="visually-hidden">Фотосалон в Арзамасе - печать фото, фото на документы, сувениры</h1>
+        <section class="intro section-padding">
+            <div class="intro__content">
+                <h2 class="intro__title">Яркие фото - территория качества и стиля!</h2>
+            </div>
+        </section>
+        <section class="about section-padding">
             <div class="about-wrapper container">
-                <h2 class="about__title">Фотосалон "Яркие фото"<span class="about__small-text">5 фактов</span></h2>
+                <h2 class="about__title section-title">Фотосалон "Яркие фото"</h2>
+                <!-- <span class="about__small-text">5 фактов</span> -->
                 <div class="row">                    
                     <div class="col-lg-6">
                         <div class="about-image-wrapper">                           
@@ -72,7 +80,7 @@
                     </div>
                     <div class="about__text col-lg-6">                                               
                         <ul class="about__list features">
-                            <li class="features__item">
+                            <!-- <li class="features__item">
                                 <h3 class="features__title"><span class="features__number">1</span> Работаем для вас с 2010 года</h3>
                                 <p class="features__text">Работаем на рынке фотоуслуг более 10 лет, за это время мы выросли с небольшого фотосалона в р.п. Шатки,
                                     до самой большой сети фотоцентров в г. Арзамас.</p>   
@@ -84,8 +92,8 @@
                             <li class="features__item">
                                 <h3 class="features__title"><span class="features__number">3</span> Делаем "КРАСИВО"</h3>
                                 <p class="features__text">Высокопроизводительное оборудование позволяет оперативно напечать и изготовить фото и сувенирную продукцию высокого качества.</p>   
-                            </li>
-                            <li class="features__item">
+                            </li> -->
+                            <!-- <li class="features__item">
                                 <h3 class="features__title"><span class="features__number">4</span> Большой выбор фотоуслуг</h3>
                                 <p class="features__text">Фото на документы, нанесение изображения на текстиль, сувениры, полиграфия и многое другое.</p>   
                             </li>
@@ -93,18 +101,19 @@
                                 <h3 class="features__title"><span class="features__number">5</span> Ценим и любим наших клиентов</h3>
                                 <p class="features__text">Мы дорожим своими Клиентами,
                                     поэтому если Вы обратились к нам, то Вы обязательно получите качественную услугу и останетесь довольны.</p>   
-                            </li>
+                            </li> -->
                         </ul>
                     </div>
                 </div> 
             </div>
         </section>
-        <section class="offer">
+        <section class="offer section-padding">
             <div class="offer-wrapper container">
-                <h2 class="offer__title">Наши услуги</h2>
-                <ul class="offer__list row">                    <li class="offer__item col-md-6 col-lg-3">
+                <h2 class="offer__title section-title">Наши услуги</h2>
+                <ul class="offer__list row">                    
+                    <li class="offer__item col-md-6 col-lg-3">
                         <div class="offer__card">
-                            <img class="offer__image" src="http://placehold.it/220x200" alt="" width="100%">
+                            <img class="offer__image" src="img/content-img/footbolka.jpg" alt="" width="100%">
                             <h3 class="offer__name">Текстиль с фото</h3>
                             <p class="offer__description">Нанесем ваше изображение, на футболку, кепку, подушку и другой текстиль</p>
                             <a class="offer__link button" href="#">Подробнее</a>
@@ -112,66 +121,66 @@
                     </li>
                     <li class="offer__item col-md-6 col-lg-3">
                         <div class="offer__card">
-                            <img class="offer__image" src="http://placehold.it/220x200" alt="" width="100%">
+                            <img class="offer__image" src="img/content-img/photo.jpg" alt="" width="100%">
                             <h3 class="offer__name">Печать фотографий</h3>
-                            <p class="offer__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, sapiente.</p>
+                            <p class="offer__description">Печатаем фотографии любого формата, оперативно и качественно</p>
                             <a class="offer__link button" href="#">Подробнее</a>
                         </div>
                     </li>
                     <li class="offer__item col-md-6 col-lg-3">
                         <div class="offer__card">
-                            <img class="offer__image" src="http://placehold.it/220x200" alt="" width="100%">
+                            <img class="offer__image" src="img/content-img/krujka.jpg" alt="" width="100%">
                             <h3 class="offer__name">Сувенирная посуда</h3>
-                            <p class="offer__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, sapiente.</p>
+                            <p class="offer__description">Кружки, подставки под горячее, тарелки и многое другое</p>
                             <a class="offer__link button" href="#">Подробнее</a>
                         </div>
                     </li>
                     <li class="offer__item col-md-6 col-lg-3">
                         <div class="offer__card">
-                            <img class="offer__image" src="http://placehold.it/220x200" alt="" width="100%">
+                            <img class="offer__image" src="img/content-img/vizitki.jpg" alt="" width="100%">
                             <h3 class="offer__name">Полиграфия</h3>
-                            <p class="offer__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, sapiente.</p>
+                            <p class="offer__description">Визитки, приглашения, листовки, календари, конверты и не только</p>
                             <a class="offer__link button" href="#">Подробнее</a>
                         </div>
                     </li>
                     <li class="offer__item col-md-6 col-lg-3">
                         <div class="offer__card">
-                            <img class="offer__image" src="http://placehold.it/220x200" alt="" width="100%">
+                            <img class="offer__image" src="img/content-img/suvenir.jpg" alt="" width="100%">
                             <h3 class="offer__name">Сувениры</h3>
-                            <p class="offer__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, sapiente.</p>
+                            <p class="offer__description">Брелоки, магниты, пазлы, чехлы на телефон и ещё много крутых штук</p>
                             <a class="offer__link button" href="#">Подробнее</a>
                         </div>
                     </li>
                     <li class="offer__item col-md-6 col-lg-3">
                         <div class="offer__card">
-                            <img class="offer__image" src="http://placehold.it/220x200" alt="" width="100%">
+                            <img class="offer__image" src="img/content-img/photo_passport.jpg" alt="" width="100%">
                             <h3 class="offer__name">Фото на документы</h3>
-                            <p class="offer__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, sapiente.</p>
+                            <p class="offer__description">Сфотографируем, отретушируем и напечатаем фото на паспорт, визу, права</p>
                             <a class="offer__link button" href="#">Подробнее</a>
                         </div>
                     </li>
                     <li class="offer__item col-md-6 col-lg-3">
                         <div class="offer__card">
-                            <img class="offer__image" src="http://placehold.it/220x200" alt="" width="100%">
+                            <img class="offer__image" src="img/content-img/holst.jpg" alt="" width="100%">
                             <h3 class="offer__name">Печать на холсте</h3>
-                            <p class="offer__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, sapiente.</p>
+                            <p class="offer__description">Любимая фотография, напечатанная на фактурном полотне, это красиво</p>
                             <a class="offer__link button" href="#">Подробнее</a>
                         </div>
                     </li>
                     <li class="offer__item col-md-6 col-lg-3">
                         <div class="offer__card">
-                            <img class="offer__image" src="http://placehold.it/220x200" alt="" width="100%">
+                            <img class="offer__image" src="img/content-img/printer.jpg" alt="" width="100%">
                             <h3 class="offer__name">Работа с документами</h3>
-                            <p class="offer__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, sapiente.</p>
+                            <p class="offer__description">Печать, сканирование, копии, ламинирование, брошюрование</p>
                             <a class="offer__link button" href="#">Подробнее</a>
                         </div>
                     </li>
                 </ul>
             </div>
         </section>
-        <section class="reviews">
+        <section class="reviews section-padding">
             <div class="reviews-content-wrapper container">
-                <h2 class="reviews__title">Отзывы наших клиентов</h2>
+                <h2 class="reviews__title section-title">Отзывы наших клиентов</h2>
                 <div class="reviews-slider-wrapper">
                     <a class="reviews-slider__control" href="#reviews-slider-id" role="button" data-slide="prev">
                         <span class="carousel-control-prev-icon reviews-slider__control-icon"
@@ -243,8 +252,8 @@
                 </ul>
             </div>
         </section>
-        <section class="contacts container">
-            <h2 class="contacts__title">Контакты</h2>
+        <section class="contacts section-padding container">
+            <h2 class="contacts__title section-title">Контакты</h2>
             <ul class="contacts__list">
                 <li class="contacts__item">
                     <h3>Наши адреса</h3>
