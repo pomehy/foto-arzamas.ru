@@ -23,6 +23,7 @@
 
 body {
     font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
 }
 
 /* ---- header-top ---- */
@@ -132,19 +133,16 @@ body {
     transform: scale(1);       
 }
 
-.about {
-    background-color: #F7F7F7;
+.about {    
     padding: 30px 0;
 }
 
 .about-image-wrapper {    
-    display: flex;
-    height: 100%; 
-    align-items: center;   
-}
-
-.about__image {
-    display: block;    
+    display: flex;    
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+           
 }
 .about__title {
     font-family: 'bebas neue';
@@ -154,7 +152,6 @@ body {
     justify-content: space-between;
     align-items: center;     
 }
-
 
 .about__small-text {
     font-size: 18px; 
@@ -198,7 +195,7 @@ body {
 .offer__title {
     font-family: 'bebas neue';
     font-size: 35px;   
-    margin-bottom: 15px; 
+    margin-bottom: 15px;     
 }
 .offer__list {
     display: flex;    
@@ -236,4 +233,44 @@ body {
     width: 100%;
     border: 1px solid   black;
     padding: 15px 0;
+}
+.reviews {
+    padding: 30px 0;
+}
+.reviews-content-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.reviews__title {
+    font-family: 'bebas neue';
+    font-size: 35px;   
+    margin-bottom: 15px;
+    text-align: center;   
+}
+.reviews-slider-wrapper {
+    display: flex;
+    max-width: 75%;
+    flex-basis: 75%;
+}
+
+.reviews-slider__list {
+    padding: 0;
+}
+.autor {
+    display: flex;
+    padding: 15px;
+    border: 1px solid black;
+    align-items: center;
+}
+.autor__photo {
+    border-radius: 50%;    
+}
+.autor__name {
+    font-weight: bold;
+}
+.autor__content {
+    display: block;
+    padding: 0 15px;
+    margin: 0;
 }
