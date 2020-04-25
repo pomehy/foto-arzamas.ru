@@ -186,7 +186,8 @@ body {
     
 }
 .offer {
-    padding: 30px 0;    
+    padding: 30px 0;
+    background-color: #F7F7F7;    
 }
 .offer-wrapper {
     display: flex;
@@ -207,14 +208,18 @@ body {
 }
 
 .offer__card {
+    background-color: #ffffff;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 10px;
-    border: 1px solid black;
+    padding: 10px;    
     margin-bottom: 30px;
     text-align: center;
     box-sizing: border-box;
+    box-shadow: 1px 1px 5px 2px rgba(34, 60, 80, 0.2);
+}
+.offer__card:hover {
+    box-shadow: 5px 5px 15px 5px rgba(34, 60, 80, 0.2);
 }
 
 .offer__name {
@@ -229,14 +234,20 @@ body {
 }
 .button {
     border-radius: 0.4em;
+    background-color: hsl(50,100%,50%);
+    
+}
+.button:hover {    
+    background-color: hsl(50,100%,45%);
 }
 .offer__link {
-    width: 100%;
-    border: 1px solid   black;
+    width: 100%;    
     padding: 15px 0;
+    text-decoration: none;
+    color: #212121;
 }
 .reviews {
-    padding: 30px 0;
+    padding: 30px 0;    
 }
 .reviews-content-wrapper {
     display: flex;
@@ -283,6 +294,9 @@ body {
     background-image: url(/img/arrow-slider.png);
     width: 20px;
     height: 50px; 
+}
+.reviews-slider__control-icon:hover {
+    opacity: 0.8;
 }
 
 .reviews-slider__control-icon--mirror {
