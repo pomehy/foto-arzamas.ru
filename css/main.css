@@ -240,7 +240,7 @@ b, strong {
 }
 .intro__text--small span {
     font-size: 17px;
-    padding: 3px 10px;
+    padding: 5px 15px;
     border: 1px dashed #ffffff;  
     text-transform: uppercase;  
 }
@@ -433,7 +433,7 @@ b, strong {
     color: #ffffff;
     border-bottom: ;
 }
-.partnres__list {
+.partners__list {
     justify-content: center;
     align-items: center;
     list-style: none;
@@ -448,10 +448,24 @@ b, strong {
 .contacts__list {
     list-style: none;
     padding: 0;
+    margin: 0;
 }
-.contacts__name span {
+.contacts__item {
+    margin-bottom: 25px;
+}
+.contacts__value {
+    margin: 10px 0 0 0;
+}
+.contacts__name {
+    font-weight: bold;
+    font-size: 20px;
+    text-transform: uppercase;    
+}
+.contats__value {
     font-size: 15px;
-    text-decoration: underline;
+}
+.adress__item {
+    font-size: 15px;
 }
 .adress__list {
     list-style: none;
@@ -460,7 +474,9 @@ b, strong {
 .adress__item {
     margin: 6px 0;
 }
-
+.contacts__map {
+    border: none;  
+} 
 .page-footer {   
     height: auto; 
     background-color: #212121;   
