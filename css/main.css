@@ -25,6 +25,9 @@ body {
     font-family: 'Open Sans', sans-serif;
     font-weight: 300;
 }
+b, strong {
+    font-weight: bold;
+}
 .visually-hidden {
     position: absolute;
     width: 1px;
@@ -50,7 +53,14 @@ body {
     box-shadow: 0 1px 5px #212121c7;
 }
 .header-top {
-    background-color: #212121;    
+    background-color: #212121;   
+    background-image: -webkit-repeating-radial-gradient(center center, rgba(0,0,0,.2), rgba(0,0,0,.2) 1px, transparent 1px, transparent 100%);
+    background-image: -moz-repeating-radial-gradient(center center, rgba(0,0,0,.2), rgba(0,0,0,.2) 1px, transparent 1px, transparent 100%);
+    background-image: -ms-repeating-radial-gradient(center center, rgba(0,0,0,.2), rgba(0,0,0,.2) 1px, transparent 1px, transparent 100%);
+    background-image: repeating-radial-gradient(center center, rgba(0,0,0,.2), rgba(0,0,0,.2) 1px, transparent 1px, transparent 100%);
+    -webkit-background-size: 3px 3px;
+    -moz-background-size: 3px 3px;
+    background-size: 3px 3px;      
 }
 .header-top-wrapper {    
     display: flex;
@@ -92,7 +102,7 @@ body {
     }  
     
     50% {        
-        box-shadow: 0 0 15px #D6197E;
+        box-shadow: 0px 0px 10px 3px #D6197E;
     }  
      
     100% {
@@ -193,67 +203,94 @@ body {
 }
 
 .intro {
+    position: relative;
     display: flex;
     height: 100vh;
     background-image: url(/img/content-img/intro-bg-1.jpg);
     background-attachment: fixed;
+    background-color: rgba(0,0,0,.55);
+    background-blend-mode: darken;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.intro__content {    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 10px solid #ffffff;    
+    padding: 40px;
+    margin: auto;
+    box-sizing: border-box;
+    max-height: 480px;
 }
 .intro__title {
-    font-size: 40px;
+    font-size: 80px;
+    letter-spacing: 2px;
     color: #ffffff;
-    font-family: 'bebas neue';
+    font-family: 'bebas neue';    
+    font-weight: bold;  
+    text-align: center;  
 }
-
-.intro__content {
-    background-color: #2121217c;
-    margin: auto;
-    height: 300px;
-    
+.intro__text {
+    text-align: center;
+    color: #ffffff;
+    line-height: 150%;
+    font-size: 20px;
+    width: 80%;
+}
+.intro__text--small span {
+    font-size: 17px;
+    padding: 3px 10px;
+    border: 1px dashed #ffffff;  
+    text-transform: uppercase;  
+}
+.about {
+    padding-bottom: 50px;
 }
 
 .about-image-wrapper {    
-    display: flex;    
-    flex-direction: column;
-    align-items: center;
+    background: url(/img/content-img/fotosalon-1.jpg);
+    filter: saturate(130%);    
     height: 100%;
-           
-}
-.about__title {    
-       
+    background-size: cover;
+    border: 7px solid #F7F7F7;     
+    box-sizing: border-box;  
+    box-shadow: 0 0 6px #212121;
+        
 }
 
+.about__image {
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    border: 10px solid #FFD501;
+
+}
 .about__small-text {
     font-size: 18px; 
     background-color: #D6197E;
     color: #ffffff; 
     padding: 5px 10px; 
-    text-align: center; 
-    
+    text-align: center;     
 }
 .features {
     list-style: none;
     padding: 0;
 }
 .features__title {
-    font-size: 18px;
-    
+    font-size: 18px;    
     text-transform: uppercase;
     border-bottom: 2px solid #D6197E;    
 }
 .features__text {
     color: #212121;
-    font-size: 14px;
+    font-size: 17px;
     margin-top: 10px;
     margin-bottom: 25px;        
 }
-.features__number {
-    background-color: #D6197E;
-    padding: 0 10px;  
-    color: #ffffff;    
-}
-.features__item {
-    
-}
+
+
 .offer {    
     background-color: #F7F7F7;    
 }
@@ -313,6 +350,10 @@ body {
     color: #212121;
 }
 .reviews {
+    /* background-image: url(/img/bg-reviews.svg);
+    background-position: left;
+    background-repeat: no-repeat; */      
+     
       
 }
 .reviews-content-wrapper {
@@ -323,6 +364,22 @@ body {
 .reviews__title {
       
 }
+.reviews__text {
+    margin: 25px 0;
+}
+.reviews__link {
+    text-decoration: none;
+    color: #4680C2;
+    padding: 0 5px 0 4px;
+    font-weight: bold;    
+    border: 1px dashed #4680C2;
+   
+}
+.reviews__link:hover {
+    opacity: 0.8;
+}
+
+
 .reviews-slider-wrapper {
     display: flex;
     max-width: 75%;
@@ -364,4 +421,31 @@ body {
 
 .reviews-slider__control-icon--mirror {
     transform: scale(-1, 1);
+}
+.partners {
+    background: rgb(40, 40, 40); 
+    padding: 2.25em 1.6875em;
+    background-image: -webkit-repeating-radial-gradient(center center, rgba(0,0,0,.2), rgba(0,0,0,.2) 1px, transparent 1px, transparent 100%);
+    background-image: -moz-repeating-radial-gradient(center center, rgba(0,0,0,.2), rgba(0,0,0,.2) 1px, transparent 1px, transparent 100%);
+    background-image: -ms-repeating-radial-gradient(center center, rgba(0,0,0,.2), rgba(0,0,0,.2) 1px, transparent 1px, transparent 100%);
+    background-image: repeating-radial-gradient(center center, rgba(0,0,0,.2), rgba(0,0,0,.2) 1px, transparent 1px, transparent 100%);
+    -webkit-background-size: 4px 4px;
+    -moz-background-size: 4px 4px;
+    background-size: 4px 4px;       
+}
+
+.partners__title {
+    color: #ffffff;
+    border-bottom: ;
+}
+.partnres__list {
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+}
+.partners__item {    
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
 }
