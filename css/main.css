@@ -248,24 +248,20 @@ b, strong {
     padding-bottom: 50px;
 }
 
-.about-image-wrapper {    
-    background: url(/img/content-img/fotosalon-1.jpg);
-    filter: saturate(130%);    
-    height: 100%;
-    background-size: cover;
+.about-image-wrapper {     
     border: 9px solid #F7F7F7;     
     box-sizing: border-box;  
     box-shadow: 0 0 6px #212121;
+    height: 100%;
         
 }
-
-.about__image {
-    width: 400px;
-    height: 400px;
-    border-radius: 50%;
-    border: 10px solid #FFD501;
-
+.about__image {    
+    display: flex;
+    flex-shrink: 1;
+    width: 100%;  
+    height: 100%;      
 }
+
 .about__small-text {
     font-size: 18px; 
     background-color: #D6197E;
