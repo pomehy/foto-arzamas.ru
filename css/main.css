@@ -294,9 +294,7 @@ b, strong {
     flex-direction: column;
     align-items: center;
 }
-.offer__title {
-       
-}
+
 .offer__list {
     display: flex;    
     list-style: none;
@@ -344,17 +342,43 @@ b, strong {
     text-decoration: none;
     color: #212121;
 }
-.reviews {
-      
+
+.modal-offer__content {
+    padding: 20px;
+}
+.modal-offer__title {
+    
+}
+.product__title {        
+    margin-bottom: 15px;
+}
+.product__text {
+    font-size: 15px;
+    font-style: italic;
+    line-height: 120%;
+}
+.product__table {
+    border-collapse: collapse;
+    width: 100%;    
+}
+
+.product__table td,th {
+    padding: 0.5rem;
+}
+.product__table thead {
+    background-color:  #212121;
+    color: #ffffff;
+}
+
+.product__table th:not(:first-child), .product__table td:not(:first-child)  {
+    text-align: right;
 }
 .reviews-content-wrapper {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-.reviews__title {
-      
-}
+
 .reviews__text {
     margin: 25px 0;
 }
