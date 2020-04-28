@@ -662,6 +662,9 @@ hr {
     .about__description {
         padding-top: 15px;
     }
+    .offer__description {
+        font-size: 15px;
+    }
 
 }
 /* Small Devices, Tablets */
@@ -688,6 +691,9 @@ hr {
     }
     .intro__content {
         padding: 20px;
+    }
+    .offer__name {
+        font-size: 1.7rem;
     }
 }
 
