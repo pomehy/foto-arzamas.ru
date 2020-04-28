@@ -88,7 +88,7 @@ b, strong {
     background-color: #FFD501;
     color: #212121;
     text-decoration: none;
-    border-radius: 6px;
+    border-radius: 4px;
     font-size: 13px;  
     animation: glowing 2000ms infinite;     
 }
@@ -102,7 +102,7 @@ b, strong {
     }  
     
     50% {        
-        box-shadow: 0px 0px 10px 3px #D6197E;
+        box-shadow: 0px 0px 5px 3px #D6197E;
     }  
      
     100% {
@@ -128,7 +128,7 @@ b, strong {
 
 /* ---- main-nav ---- */
 .header-nav {
-    height: 80px;
+    height: auto;
     display: flex;
     align-items: center;
     background-color: #ffffff;
@@ -139,8 +139,7 @@ b, strong {
     background-size: 130px, cover;
 }
 
-.main-nav {    
-    position: relative;
+.main-nav {   
     display: flex;
     justify-content: space-between;   
     padding: .5rem 1rem; 
@@ -184,8 +183,10 @@ b, strong {
     padding: 0;
     list-style: none;
     justify-content: space-between;    
-    flex-basis: 50%;
-    margin: 0;
+    flex-basis: 60%;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: auto;
 }
 .main-nav__link {
     font-family: 'bebas neue';
@@ -208,10 +209,21 @@ b, strong {
 .main-nav__item:focus::after {
     transform: scale(1);       
 }
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(33, 33, 33, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+  
+.navbar-toggler {
+    border-color: rgba(33, 33, 33, 0.5);    
+}
 
-.intro {
-    position: relative;
+.page-main {
+    padding-top: 45px;
+}
+.intro {    
     display: flex;
+    justify-content: center;
+    align-items: center;
     height: 100vh;
     background-image: url(/img/content-img/intro-bg-1.jpg);
     background-attachment: fixed;
@@ -220,16 +232,16 @@ b, strong {
     background-repeat: no-repeat;
     background-size: cover;
 }
-.intro__content {    
+.intro__content {
+    margin-top: 30px;    
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     border: 10px solid #ffffff;    
-    padding: 40px;
-    margin: auto;
+    padding: 40px;    
     box-sizing: border-box;
-    max-height: 480px;
+    height: auto;
 }
 .intro__title {
     font-size: 80px;
@@ -246,11 +258,14 @@ b, strong {
     font-size: 20px;
     width: 80%;
 }
-.intro__text--small span {
+.intro__feature {
     font-size: 17px;
     padding: 5px 15px;
+    color: #ffffff;
     border: 1px dashed #ffffff;  
-    text-transform: uppercase;  
+    text-transform: uppercase; 
+    margin: 20px 0; 
+    letter-spacing: 1px;
 }
 .about {
     padding-bottom: 50px;
@@ -614,4 +629,83 @@ hr {
 .copyright__copy-text {
     font-size: 12px;
     color: rgba(247, 247, 247, 0.7);
+}
+
+
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+	
+}
+
+@media only screen and (max-width : 1199px) {
+}
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+        
+
+}
+@media only screen and (max-width : 991px) {
+    .header-top__list {       
+        flex-basis: 70%;        
+    }
+    .header-top__item {
+        font-size: 12px;
+    }
+    .main-nav__list {
+        flex-basis: 75%;
+    }
+    .intro__title {
+        font-size: 55px;
+    }
+    .intro__text {
+        font-size: 15px;
+    }
+
+}
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+    
+}  
+
+@media only screen and (max-width : 767px) {  
+    .header-top-wrapper {
+        padding: 0.5rem 0rem;
+    }
+    .social {
+        display: none;
+    }
+    .header-top__item:last-child {
+        display: none;
+    } 
+    .main-nav__list {
+        margin-top: 15px;
+        flex-direction: column;        
+    }   
+    .main-nav__item {        
+        margin: 1px 0;
+    }
+}
+
+@media only screen and (max-width : 576px) {
+    .header-top-wrapper {
+        padding: 0.5rem 1rem;
+    }
+    
+}
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+    .header-top__list {
+        flex-basis: 45%;
+    }
+    .header-top__item:nth-child(2) {
+        display: none;
+    }     
+}
+
+@media only screen and (max-width : 360px) {
+    .header-top__list {
+        flex-basis: 58%;
+    }
+    
 }
