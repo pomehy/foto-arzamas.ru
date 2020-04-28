@@ -84,7 +84,7 @@ b, strong {
 }
 .header-top__link {
     padding: 5px 10px;
-    /* border: 1px solid #ffffff; */
+    border: none;
     background-color: #FFD501;
     color: #212121;
     text-decoration: none;
@@ -213,6 +213,37 @@ b, strong {
 
 .page-main {
     padding-top: 45px;
+}
+.modal-question {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.modal-question__content {
+    padding: 20px;
+    width: auto;    
+}
+.modal-question__header {
+    text-align: center;
+}
+.modal-question__title {
+    font-weight: bold;
+    font-size: 20px;    
+    margin-top: 10px;
+    text-transform: uppercase;
+}
+.question-form__input {
+    margin-bottom: 15px;
+}
+.question-form__textarea {
+    display: block;    
+    width: 100%;
+}
+.modal-question__button {
+    width: 100%;
+    margin-top: 15px;
+    padding: 15px;
+    border: none;
 }
 .intro {    
     display: flex;
@@ -391,11 +422,15 @@ b, strong {
 .product__text {
     font-size: 15px;
     font-style: italic;
-    line-height: 120%;
+    line-height: 135%;
 }
 .product__table {
     border-collapse: collapse;
     width: 100%;    
+}
+.product__table--small {
+    margin-bottom: 10px; 
+    display: none; 
 }
 
 .product__table td,th {
@@ -644,6 +679,10 @@ hr {
     .reviews-slider-wrapper {
         max-width: 100%;
     }
+    .footer-nav__price-link {
+        font-size: 12px;
+        padding: 15px 20px;
+    } 
 
 }
 /* Medium Devices, Desktops */
@@ -685,6 +724,7 @@ hr {
     .footer-nav__price-link {
         font-size: 12px;
         padding: 15px 10px;
+        margin-bottom: 0;
     }    
 
 }
@@ -791,6 +831,12 @@ hr {
     }
     .copyright__copy-text {
         font-size: 10px;
+    }
+    .product__table {
+        display: none;
+    }
+    .product__table--small {        
+        display: table; 
     }
     
 }
