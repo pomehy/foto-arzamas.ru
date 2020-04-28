@@ -127,7 +127,7 @@ b, strong {
 }
 
 /* ---- main-nav ---- */
-.main-nav {
+.header-nav {
     height: 80px;
     display: flex;
     align-items: center;
@@ -139,12 +139,20 @@ b, strong {
     background-size: 130px, cover;
 }
 
-.main-nav-wrapper {
+.main-nav {    
+    position: relative;
+    display: flex;
+    justify-content: space-between;   
+    padding: .5rem 1rem; 
+    align-items: center; 
+}
+
+/* .main-nav-wrapper {
     display: flex;
     justify-content: space-between;   
     padding: .5rem 1rem; 
     align-items: center;    
-}
+} */
 .logo {
     display: flex;    
     text-decoration: none;       
