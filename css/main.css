@@ -659,6 +659,9 @@ hr {
     .intro__text {
         font-size: 15px;
     }
+    .about__description {
+        padding-top: 15px;
+    }
 
 }
 /* Small Devices, Tablets */
@@ -700,11 +703,14 @@ hr {
     }
     .header-top__item:nth-child(2) {
         display: none;
-    }     
-    .intro__title {
+    } 
+    .intro__text {
+        font-size: 14px;
+    }
+    .section-title {
         font-size: 35px;
     }
-    .intro__text {
+    .features__text {
         font-size: 14px;
     }
 }
