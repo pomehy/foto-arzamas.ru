@@ -186,8 +186,7 @@ b, strong {
     font-family: 'bebas neue';
     font-size: 25px;
     text-decoration: none;
-    color: #212121;
-    position: relative;    
+    color: #212121;       
 }
 .main-nav__item::after {
     content: '';
