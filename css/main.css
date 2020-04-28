@@ -372,8 +372,7 @@ b, strong {
     justify-content: flex-end;
 }
 .modal-offer__button {
-    padding: 12px 35px;
-    margin-left: 7px;
+    padding: 12px 35px;    
     border: none;
 }
 .modal-offer__button--close {
@@ -418,6 +417,8 @@ b, strong {
 
 .reviews__text {
     margin: 25px 0;
+    text-align: center;
+    line-height: 180%;
 }
 .reviews__link {
     text-decoration: none;
@@ -431,36 +432,17 @@ b, strong {
     opacity: 0.8;
 }
 
-
+.reviews-slider {
+    margin-left: 15px;
+    margin-right: 15px;
+}
 .reviews-slider-wrapper {
     display: flex;
-    max-width: 75%;
-    flex-basis: 75%;
-}
-
-.reviews-slider__list {
-    padding: 0;
-}
-.autor {
-    display: flex;
-    padding: 15px;    
-    align-items: center;
-}
-.autor__photo {
-    border-radius: 50%;    
-}
-.autor__name {
-    font-weight: bold;
-}
-.autor__content {
-    display: block;
-    padding: 0 15px;
-    margin: 0;
+    max-width: 80%;    
 }
 .reviews-slider__control {    
     display: flex;    
-    align-items: center;
-    padding: 0 20px;
+    align-items: center;    
 }
 .reviews-slider__control-icon {
     background-image: url(/img/arrow-slider.png);
@@ -473,6 +455,30 @@ b, strong {
 
 .reviews-slider__control-icon--mirror {
     transform: scale(-1, 1);
+}
+
+
+.reviews-slider__list {
+    padding: 0;
+}
+.autor {
+    display: flex;       
+    align-items: center;
+}
+.autor__photo {
+    display: block;
+    margin: auto;
+    border-radius: 50%;    
+}
+.autor__name {
+    display: block;    
+    font-weight: bold;
+}
+
+.autor__content {
+    display: block;
+    padding: 15px;
+    margin: 0;
 }
 .partners {
     background: rgb(40, 40, 40); 
@@ -523,14 +529,13 @@ b, strong {
 }
 .adress__item {
     font-size: 15px;
+    margin: 7px 0;
 }
 .adress__list {
     list-style: none;
     padding: 0;
 }
-.adress__item {
-    margin: 6px 0;
-}
+
 .contacts__map {
     border: none;  
 } 
@@ -546,8 +551,7 @@ b, strong {
     background-size: 3px 3px;  
 }
 .page-footer-wrapper {
-    padding: .5rem 1rem; 
-    padding-top: 1rem;
+    padding: .5rem 1rem;    
     display: flex;
     align-items: center;
     justify-content: space-between;   
@@ -562,7 +566,7 @@ b, strong {
 }
 .footer-nav {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
 }
 .footer-nav__list {    
     list-style: none;
@@ -637,6 +641,10 @@ hr {
 }
 
 @media only screen and (max-width : 1199px) {
+    .reviews-slider-wrapper {
+        max-width: 100%;
+    }
+
 }
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px) {
@@ -665,6 +673,19 @@ hr {
     .offer__description {
         font-size: 15px;
     }
+    .autor__text {         
+        height: 144px;
+    }
+    .contacts__map {
+        height: 400px;
+    }
+    .footer-nav {        
+        justify-content: center;
+    }
+    .footer-nav__price-link {
+        font-size: 12px;
+        padding: 15px 10px;
+    }    
 
 }
 /* Small Devices, Tablets */
@@ -695,12 +716,34 @@ hr {
     .offer__name {
         font-size: 1.7rem;
     }
+    .autor__name {
+        text-align: center;                
+    }
+    .autor__text {
+        text-align: center;
+        height: 126px;
+    }    
+    .contacts {        
+        padding: 40px 15px 15px 15px;
+    }
+    .logo--footer {
+       justify-content: center;
+       margin-top: 15px;
+       margin-bottom: 15px;
+    }
+    
 }
 
 @media only screen and (max-width : 576px) {
     .header-top-wrapper {
         padding: 0.5rem 1rem;
     }   
+    .autor__text {        
+        height: 130px;
+    }    
+    .contacts__map {
+        height: 300px;
+    }
 }
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px) {
@@ -718,7 +761,15 @@ hr {
     }
     .features__text {
         font-size: 14px;
+    }    
+    .autor__text {     
+        font-size: 15px;   
+        height: 140px;
     }
+    .modal-offer__button {
+        width: 100%;
+    }
+    
 }
 
 @media only screen and (max-width : 360px) {
@@ -728,6 +779,18 @@ hr {
     .intro__title {
         font-size: 30px;
     }
-    
+    .autor__text {   
+        font-size: 14px;        
+        height: 145px;
+    }
+    .product__table {
+        font-size: 14px;
+    }
+    .copyright__right {
+        font-size: 10px;        
+    }
+    .copyright__copy-text {
+        font-size: 10px;
+    }
     
 }
