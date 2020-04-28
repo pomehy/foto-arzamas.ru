@@ -132,7 +132,7 @@ b, strong {
     display: flex;
     align-items: center;
     background-color: #ffffff;
-    background: url(/img/pattern-opacity.svg), linear-gradient(#FFD501, #FFED01); 
+    background: url(../img/pattern-opacity.svg), linear-gradient(#FFD501, #FFED01); 
     background-position: 75px 125px, center;
     background-clip: padding-box;
     background-origin: border-box;
@@ -186,7 +186,7 @@ b, strong {
     font-family: 'bebas neue';
     font-size: 25px;
     text-decoration: none;
-    color: #212121;       
+    color: #212121;          
 }
 .main-nav__item::after {
     content: '';
@@ -249,7 +249,7 @@ b, strong {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-image: url(/img/content-img/intro-bg-1.jpg);
+    background-image: url(../img/content-img/intro-bg-1.jpg);
     background-attachment: fixed;
     background-color: rgba(0,0,0,.55);
     background-blend-mode: darken;
@@ -479,7 +479,7 @@ b, strong {
     align-items: center;    
 }
 .reviews-slider__control-icon {
-    background-image: url(/img/arrow-slider.png);
+    background-image: url(../img/arrow-slider.png);
     width: 20px;
     height: 50px; 
 }
