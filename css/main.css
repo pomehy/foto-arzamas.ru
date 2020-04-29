@@ -216,7 +216,7 @@ b, strong {
 .modal-question {
     display: flex;
     justify-content: center;
-    text-align: center;
+    text-align: center;    
 }
 .modal-question__content {
     padding: 20px;
@@ -243,6 +243,11 @@ b, strong {
     margin-top: 15px;
     padding: 15px;
     border: none;
+}
+.button-close {
+    position: absolute;    
+    top: 10px;
+    right: 15px; 
 }
 .intro {    
     display: flex;
