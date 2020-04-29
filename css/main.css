@@ -831,7 +831,7 @@ hr {
     .copyright__copy-text {
         font-size: 10px;
     }
-    .product__table {
+    .product__table--none {
         display: none;
     }
     .product__table--small {        
