@@ -27,8 +27,8 @@
                 </ul>   
                 <button type="button" class="header-top__link" data-toggle="modal" data-target="#question">
                     Задать вопрос
-                </button>             
-                <!-- <a class="header-top__link" href="#">Задать вопрос</a> -->
+                </button>           
+                
                 <ul class="social">
                     <li class="social__item">
                         <a class="social__link" href="https://vk.com/yarkie_foto_plaza" target="_blank">
@@ -86,7 +86,7 @@
                         <p class="modal-question__subtitle" >Остались вопросы?<br>Задайте их нашему специалисту!</p> 
                     </div>
                     <div class="modal-question__body">
-                        <form class="question-form" action="/php/question-form.php" method="POST" name="question-form">
+                        <form class="question-form" name="question-form">
                             <div class="question-form__input">
                                 <input type="text" name="name" class="form-control" placeholder="Введите имя" required>
                             </div>                                                          
@@ -99,7 +99,15 @@
                         </form>                                               
                     </div>
                     <div class="modal-question__footer">                        
-                    </div>                     
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" name="agree" class="custom-control-input" id="customCheck">
+                                <label class="custom-control-label" for="customCheck">Нажимая кнопку, я принимаю условия
+                                    <a href="policy/politica-dannie.docx">Пользовательского соглашения</a> и даю своё согласие на обработку моих
+                                    персональных данных, в соответствии с Федеральным законом от 27.07.2006 года №152-ФЗ
+                                    «О персональных данных».
+                                </label>
+                            </div>                        
+                    </div>
                     <button type="button" class="close button-close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>                               
@@ -1311,7 +1319,7 @@
                 </ul>
             </div>
         </section>
-        <a id="contacts" style="display:block; margin-bottom:118px; margin-top:-118px"></a> 
+        <a id="contacts" style="display:block; margin-bottom:117px; margin-top:-117px"></a> 
         <section class="contacts section-padding container">
             <h2 class="contacts__title section-title">Контакты</h2>            
             <div class="row">
