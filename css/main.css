@@ -1,22 +1,21 @@
 @font-face {
     font-family: 'bebas_neue_bold';
-    src: url('/fonts/bebasneuebold-webfont.eot');
-    src: url('/fonts/bebasneuebold-webfont.eot?#iefix') format('embedded-opentype'),
-         url('/fonts/bebasneuebold-webfont.woff2') format('woff2'),
-         url('/fonts/bebasneueregular-webfont.woff') format('woff'),
-         url('/fonts/bebasneueregular-webfont.ttf') format('truetype');
+    src: url('../fonts/bebasneuebold-webfont.eot');
+    src: url('../fonts/bebasneuebold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/bebasneuebold-webfont.woff2') format('woff2'),
+         url('../fonts/bebasneueregular-webfont.woff') format('woff'),
+         url('../fonts/bebasneueregular-webfont.ttf') format('truetype');
     font-weight: bold;
     font-style: normal;
-
 }
 
 @font-face {
     font-family: 'bebas neue';
-    src: url('/fonts/bebasneueregular-webfont.eot');
-    src: url('/fonts/bebasneueregular-webfont.eot?#iefix') format('embedded-opentype'),
-         url('/fonts/bebasneueregular-webfont.woff2') format('woff2'),
-         url('/fonts/bebasneueregular-webfont.woff') format('woff'),
-         url('/fonts/bebasneueregular-webfont.ttf') format('truetype');
+    src: url('../fonts/bebasneueregular-webfont.eot');
+    src: url('../fonts/bebasneueregular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/bebasneueregular-webfont.woff2') format('woff2'),
+         url('../fonts/bebasneueregular-webfont.woff') format('woff'),
+         url('../fonts/bebasneueregular-webfont.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
