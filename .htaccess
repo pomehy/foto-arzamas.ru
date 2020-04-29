@@ -1,0 +1,10 @@
+
+RewriteEngine on
+ErrorDocument 404 /404.html
+RewriteCond %{HTTP_HOST} ^xn\-\-\-\-8sbaa7a5ajauocw\.xn\-\-p1ai$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.xn\-\-\-\-8sbaa7a5ajauocw\.xn\-\-p1ai$
+RewriteRule ^/?$ "http\:\/\/foto\-arzamas\.ru\/" [R=301,L]
+RewriteCond %{HTTP_HOST} ^xn\-\-\-\-8sbaa7a5ajauocw\.xn\-\-p1ai\.ih63386\.myihor\.ru$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.xn\-\-\-\-8sbaa7a5ajauocw\.xn\-\-p1ai\.ih63386\.myihor\.ru$
+RewriteRule ^home\/ih63386\/public_html\/foto\-arzamas\.ru$ "http\:\/\/foto\-arzamas\.ru\/" [R=301,L]
+
