@@ -672,7 +672,39 @@ hr {
     color: rgba(247, 247, 247, 0.7);
 }
 
+.main-404 {
+    padding-top: 10 0 20px 0;
+}
+.error-image-wrapper {
+    padding: 0 25px;
+}
+.main-404__image {
+    width: 100%;
+}
+.error-text-wrapper {
+    padding: 20px 0;
+}
+.error__text {
+    padding: 0 15px;
+}
+.error__title {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+    text-align: start;
+}
 
+.error__link { 
+    margin: 20px 0;
+    display: inline-block;   
+    text-decoration: none;
+    padding: 15px;
+    background-color: #D6197E;
+    color: #ffffff;
+}
 
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px) {
@@ -774,6 +806,19 @@ hr {
        justify-content: center;
        margin-top: 15px;
        margin-bottom: 15px;
+    }
+    .error-text-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        order: 1;
+    }
+    .error__title {
+        display: block;
+        text-align: center;
+    }
+    .error__text {
+        text-align: center;
     }
     
 }
