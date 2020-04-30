@@ -8,12 +8,28 @@
     <meta name="description" content="Огромный выбор фотоуслуг. Фотоподарки для друзей и близких. Печать фотографий, фото на докуметы. Узнайте больше о компании, зайдайте вопрос."> 
     <meta name="Keywords" content="Фотосалон, фото на документы, сувениры, подарки, с логотипом.">
     <meta name="robots" content="all"> 
+    <meta name="mailru-domain" content="UsPAxMeRipcQRIxD"/> 
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/bootstrap-grid.css">
     <link rel="stylesheet" href="css/main.css">    
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap&subset=cyrillic-ext" rel="stylesheet">
-    <title>Фотосалон "Яркие Фото". Печать фото, фотоподарки, фото на документы в Арзамасе.</title>    
+    <title>Фотосалон "Яркие Фото". Печать фото, фотоподарки, фото на документы в Арзамасе.</title>
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript" >
+        (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+        m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+        (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+        ym(57050635, "init", {
+            clickmap:true,
+            trackLinks:true,
+            accurateTrackBounce:true,
+            webvisor:true
+        });
+    </script>
+    <noscript><div><img src="https://mc.yandex.ru/watch/57050635" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+    <!-- /Yandex.Metrika counter -->
 </head>
 <body>
     <header class="page-header fixed-top"> 
@@ -22,13 +38,16 @@
                 <ul class="header-top__list">
                     <li class="header-top__item">г. Арзамас</li>
                     <li class="header-top__item">Ежедневно | 9:00 - 20:00</li>
-                    <li class="header-top__item">+7 (920) 019 75 65</li>
-                    <li class="header-top__item">yarkie-foto@mail.ru</li>                    
+                    <li class="header-top__item">
+                        <a class="header-top__link" href="tel:+79200197565">+7 (920) 019 75 65</a>
+                    </li>
+                    <li class="header-top__item">
+                        <a class="header-top__link" href="mailto:yarkie-foto@mail.ru">yarkie-foto@mail.ru</a>
+                    </li>                    
                 </ul>   
-                <button type="button" class="header-top__link" data-toggle="modal" data-target="#question">
+                <button type="button" class="header-top__button" data-toggle="modal" data-target="#question">
                     Задать вопрос
-                </button>           
-                
+                </button>  
                 <ul class="social">
                     <li class="social__item">
                         <a class="social__link" href="https://vk.com/yarkie_foto_plaza" target="_blank">
@@ -86,7 +105,7 @@
                         <p class="modal-question__subtitle" >Остались вопросы?<br>Задайте их нашему специалисту!</p> 
                     </div>
                     <div class="modal-question__body">
-                        <form class="question-form" name="question-form">
+                        <form class="question-form" name="question-form" action="/php/mail.php">
                             <div class="question-form__input">
                                 <input type="text" name="name" class="form-control" placeholder="Введите имя" required>
                             </div>                                                          
@@ -94,20 +113,20 @@
                                 <input type="tel" name="tel" class="form-control" placeholder="Введите телефон" required>
                             </div>                           
                             <textarea class="form-control question-form__textarea" name="message" cols="40" rows="5" placeholder="Укажите вопрос"></textarea>
-                            <input name="antispam" type="text" style="display:none" value="">                                
+                            <input name="bezspama" type="text" style="display:none" value=""> 
                             <input class="modal-question__button button" type="submit" value="Отправить">
                         </form>                                               
                     </div>
-                    <div class="modal-question__footer">                        
-                            <div class="custom-control custom-checkbox">
+                    <div class="modal-question__footer">
+                        <div class="custom-control custom-checkbox">
                                 <input type="checkbox" name="agree" class="custom-control-input" id="customCheck">
                                 <label class="custom-control-label" for="customCheck">Нажимая кнопку, я принимаю условия
                                     <a href="policy/politica-dannie.docx">Пользовательского соглашения</a> и даю своё согласие на обработку моих
                                     персональных данных, в соответствии с Федеральным законом от 27.07.2006 года №152-ФЗ
                                     «О персональных данных».
                                 </label>
-                            </div>                        
-                    </div>
+                        </div>                          
+                    </div>                     
                     <button type="button" class="close button-close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>                               
@@ -1327,7 +1346,7 @@
                     <ul class="contacts__list">
                         <li class="contacts__item">
                             <h3 class="contacts__name">Наши адреса:</h3>
-                            <p class="contats__value">
+                            <p class="contacts__value">
                                 <ul class="adress__list">
                                     <li class="adress__item">ТЦ МЕТРО, 1 этаж - пр. Ленина д. 119</li>
                                     <li class="adress__item">ТЦ ПЛАЗА, 1 этаж - пр. Ленина д. 129А</li>
@@ -1338,15 +1357,17 @@
                         </li>
                         <li class="contacts__item">
                             <h3 class="contacts__name">Режим работы</h3>
-                            <p class="contats__value">Ежедневно с 9:00 - 20:00</p>
+                            <p class="contacts__value">Ежедневно с 9:00 - 20:00</p>
                         </li>
                         <li class="contacts__item">
                             <h3 class="contacts__name">Телефон</h3>
-                            <p class="contats__value">+7 (920) 019 75 65</p>
+                            <p class="contacts__value">
+                                <a class="contacts__link" href="tel:+79200197565">+7 (920) 019 75 65</a></p>
                         </li>
                         <li class="contacts__item">
                             <h3 class="contacts__name">E-mail:</h3>
-                            <p class="contats__value">yarkie-foto@mail.ru</p>
+                            <p class="contacts__value">
+                                <a class="contacts__link" href="mailto:yarkie-foto@mail.ru">yarkie-foto@mail.ru</a></p>
                         </li>
                     </ul>
                 </div>
@@ -1382,8 +1403,7 @@
                         <li class="footer-nav__item">
                             <a class="footer-nav__link" href="#contacts">Контакты</a>
                         </li>
-                    </ul>
-                   
+                    </ul>                   
                 </div>
                 <div class="price-link-wrapper col-md-3">
                     <a class="footer-nav__price-link" href="/img/content-img/Price-list__yarkie-photo.jpg" download>Скачать прайс-лист</a>

@@ -82,6 +82,10 @@ b, strong {
     font-size: 13px;
 }
 .header-top__link {
+    text-decoration: none;
+    color: #ffffff;
+}
+.header-top__button {
     padding: 5px 10px;
     border: none;
     background-color: #FFD501;
@@ -91,7 +95,7 @@ b, strong {
     font-size: 13px;  
     animation: glowing 2000ms infinite;     
 }
-.header-top__link:hover {
+.header-top__button:hover {
     opacity: 0.8;
 }
 
@@ -207,7 +211,8 @@ b, strong {
 }
   
 .navbar-toggler {
-    border-color: rgba(33, 33, 33, 0.5);    
+    border-color: none;
+    outline: none;
 }
 
 .page-main {
@@ -244,18 +249,16 @@ b, strong {
     padding: 15px;
     border: none;
 }
-.button-close {
-    position: absolute;    
-    top: 10px;
-    right: 15px; 
-}
 .custom-control-label {
     font-size: 12px;
     text-align: left;
     margin-top: 10px;
 }
-
-
+.button-close {
+    position: absolute;    
+    top: 10px;
+    right: 15px; 
+}
 .intro {    
     display: flex;
     justify-content: center;
@@ -570,12 +573,16 @@ b, strong {
     font-size: 20px;
     text-transform: uppercase;    
 }
-.contats__value {
+.contacts__value {
     font-size: 15px;
 }
 .adress__item {
     font-size: 15px;
     margin: 7px 0;
+}
+.contacts__link {
+    text-decoration: none;
+    color: #212121;
 }
 .adress__list {
     list-style: none;
@@ -694,8 +701,6 @@ hr {
     display: flex;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
-    margin-right: -15px;
-    margin-left: -15px;
     text-align: start;
 }
 
