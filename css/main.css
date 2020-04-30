@@ -284,10 +284,9 @@ b, strong {
     padding: 15px;
     border: none;
 }
-.custom-control-label {
+.modal-question__text {
     font-size: 12px;
-    text-align: left;
-    margin-top: 10px;
+    text-align: left;    
 }
 .button-close {
     position: absolute;    
