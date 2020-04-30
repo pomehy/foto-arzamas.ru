@@ -112,12 +112,17 @@
                         <p class="modal-question__subtitle" >Остались вопросы?<br>Задайте их нашему специалисту!</p> 
                     </div>
                     <div class="modal-question__body">
-                        <form class="question-form" name="question-form" action="/php/mail.php">
+                        <form class="question-form" name="question-form">
+                            <!-- Hidden Required Fields -->
+                            <input type="hidden" name="project_name" value="foto-arzamas.ru">
+                            <input type="hidden" name="admin_email" value="mail@foto-arzamas">
+                            <input type="hidden" name="form_subject" value="Вопрос с сайта foto-arzamas.ru">
+                            <!-- END Hidden Required Fields -->
                             <div class="question-form__input">
                                 <input type="text" name="name" class="form-control" placeholder="Введите имя" required>
                             </div>                                                          
                             <div class="question-form__input">
-                                <input type="tel" name="tel" class="form-control" placeholder="Введите телефон" required>
+                                <input type="tel" name="phone" class="form-control" placeholder="Введите телефон" required>
                             </div>                           
                             <textarea class="form-control question-form__textarea" name="message" cols="40" rows="5" placeholder="Укажите вопрос"></textarea>
                             <input name="bezspama" type="text" style="display:none" value=""> 
@@ -125,15 +130,13 @@
                         </form>                                               
                     </div>
                     <div class="modal-question__footer">
-                        <div class="custom-control custom-checkbox">
-                                <input type="checkbox" name="agree" class="custom-control-input" id="customCheck">
-                                <label class="custom-control-label" for="customCheck">Нажимая кнопку "Отправить", я принимаю условия
-                                    <a href="policy/politica-dannie.docx">Пользовательского соглашения</a> и даю своё согласие на обработку моих
-                                    персональных данных, в соответствии с Федеральным законом от 27.07.2006 года №152-ФЗ
-                                    «О персональных данных».
-                                </label>
-                        </div>                          
-                    </div>                     
+                        <p class="modal-question__text">Нажимая кнопку "Отправить", я принимаю условия
+                            <a href="policy/politica-dannie.docx">Пользовательского соглашения</a> и даю своё согласие
+                            на обработку моих
+                            персональных данных, в соответствии с Федеральным законом от 27.07.2006 года №152-ФЗ
+                            «О персональных данных».
+                        </p>
+                    </div>
                     <button type="button" class="close button-close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>                               
@@ -380,7 +383,85 @@
                                 </div>
                             </div>
                         </div>
-                    </li>                    
+                    </li>  
+                    <li class="offer__item col-sm-6 col-lg-3">
+                        <div class="offer__card">
+                            <img class="offer__image" src="img/content-img/holst.jpg" alt="Холст" width="100%">
+                            <h3 class="offer__name">Печать на холсте</h3>
+                            <p class="offer__description">Любимая фотография, напечатанная на фактурном полотне, это
+                                красиво</p>
+                            <a class="offer__link button" href="#holst" data-toggle="modal"
+                                data-target=".offer-holst">Подробнее</a>
+                        </div>
+                        <div id="holst" class="modal fade offer-holst" tabindex="-1" role="dialog"
+                            aria-labelledby="textil" aria-hidden="true">
+                            <div class="modal-dialog modal-lg">
+                                <div class="modal-content modal-offer__content">
+                                    <div class="modal-offer__header">
+                                        <h4 class="modal-offer__title">Печать на холсте</h4>
+                                        <hr>
+                                    </div>
+                                    <div class="modal-offer__body">
+                                        <article class="row product">
+                                            <div class="product__image-wrapper col-lg-4">
+                                                <img class="product__image" src="img/content-img/holst__photo-1.jpg" alt="Холст"
+                                                    width="100%">
+                                            </div>
+                                            <div class="product__description col-lg-8">
+                                                <h5 class="product__title"></h5>
+                                                <table class="product__table">
+                                                    <thead>
+                                                        <tr>
+                                                            <th>Размер холста</th>
+                                                            <th>Цена за шт.</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>20х30 см. (А4)</td>
+                                                            <td>850 руб.</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>30х40 см. (А3)</td>
+                                                            <td>1350 руб.</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>40х60 см. (А2)</td>
+                                                            <td>1850 руб.</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>60х80 см. (А1)</td>
+                                                            <td>2850 руб.</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                                <p class="product__text">
+                                                    *В стоимость картины на холсте входит печать на прочном фактурном
+                                                    полотне и натяжка на деревянный подрамник.
+                                                </p>
+                                                <p class="product__text">
+                                                    Любимая фотография, напечатанная на фактурном полотне, похожая на
+                                                    живописную картину - прекрасное украшение вашего дома, а также
+                                                    приятный
+                                                    и креативный подарок друзьям и коллегам, с которым вы точно не
+                                                    прогадаете! Для того, чтобы изображение получилось чётким,
+                                                    фотография
+                                                    должна быть в хорошем качестве, если же у вас нет фотографий нужного
+                                                    размера, мы можем попробовать сделать коллаж из нескольких
+                                                    изображений.
+                                                </p>
+                                            </div>
+                                        </article>
+                                        <hr>
+                                    </div>
+                                    <div class="modal-offer__footer">
+                                        <button class="button modal-offer__button modal-offer__button--close"
+                                            data-dismiss="modal">Закрыть</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>                  
                     <li class="offer__item col-sm-6 col-lg-3">
                         <div class="offer__card">
                             <img class="offer__image" src="img/content-img/photo-print.jpg" alt="Коллаж фотографий" width="100%">
@@ -896,85 +977,7 @@
                                 </div>
                             </div>
                         </div>
-                    </li>
-                    <li class="offer__item col-sm-6 col-lg-3">
-                        <div class="offer__card">
-                            <img class="offer__image" src="img/content-img/holst.jpg" alt="Холст" width="100%">
-                            <h3 class="offer__name">Печать на холсте</h3>
-                            <p class="offer__description">Любимая фотография, напечатанная на фактурном полотне, это
-                                красиво</p>
-                            <a class="offer__link button" href="#holst" data-toggle="modal"
-                                data-target=".offer-holst">Подробнее</a>
-                        </div>
-                        <div id="holst" class="modal fade offer-holst" tabindex="-1" role="dialog"
-                            aria-labelledby="textil" aria-hidden="true">
-                            <div class="modal-dialog modal-lg">
-                                <div class="modal-content modal-offer__content">
-                                    <div class="modal-offer__header">
-                                        <h4 class="modal-offer__title">Печать на холсте</h4>
-                                        <hr>
-                                    </div>
-                                    <div class="modal-offer__body">
-                                        <article class="row product">
-                                            <div class="product__image-wrapper col-lg-4">
-                                                <img class="product__image" src="img/content-img/holst__photo-1.jpg" alt="Холст"
-                                                    width="100%">
-                                            </div>
-                                            <div class="product__description col-lg-8">
-                                                <h5 class="product__title"></h5>
-                                                <table class="product__table">
-                                                    <thead>
-                                                        <tr>
-                                                            <th>Размер холста</th>
-                                                            <th>Цена за шт.</th>
-                                                        </tr>
-                                                    </thead>
-                                                    <tbody>
-                                                        <tr>
-                                                            <td>20х30 см. (А4)</td>
-                                                            <td>850 руб.</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>30х40 см. (А3)</td>
-                                                            <td>1350 руб.</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>40х60 см. (А2)</td>
-                                                            <td>1850 руб.</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>60х80 см. (А1)</td>
-                                                            <td>2850 руб.</td>
-                                                        </tr>
-                                                    </tbody>
-                                                </table>
-                                                <p class="product__text">
-                                                    *В стоимость картины на холсте входит печать на прочном фактурном
-                                                    полотне и натяжка на деревянный подрамник.
-                                                </p>
-                                                <p class="product__text">
-                                                    Любимая фотография, напечатанная на фактурном полотне, похожая на
-                                                    живописную картину - прекрасное украшение вашего дома, а также
-                                                    приятный
-                                                    и креативный подарок друзьям и коллегам, с которым вы точно не
-                                                    прогадаете! Для того, чтобы изображение получилось чётким,
-                                                    фотография
-                                                    должна быть в хорошем качестве, если же у вас нет фотографий нужного
-                                                    размера, мы можем попробовать сделать коллаж из нескольких
-                                                    изображений.
-                                                </p>
-                                            </div>
-                                        </article>
-                                        <hr>
-                                    </div>
-                                    <div class="modal-offer__footer">
-                                        <button class="button modal-offer__button modal-offer__button--close"
-                                            data-dismiss="modal">Закрыть</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
+                    </li>                    
                     <li class="offer__item col-sm-6 col-lg-3">
                         <div class="offer__card">
                             <img class="offer__image" src="img/content-img/work-doc.jpg" alt="Принтер МФУ" width="100%">
@@ -1460,6 +1463,7 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+    <script src="js/sendmail.js"></script>
     <script src="js/scripts.js"></script>    
 </body>
 </html>
