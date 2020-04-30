@@ -356,20 +356,36 @@ b, strong {
     height: 100%;
         
 }
-.about__image {    
+.about-slider {
+    height: 100%;
+}
+.about-slider__inner {
+    height: 100%;
+}
+.about-slider__item {
+    height: 100%;
+}
+.about-slider__title {
+    position: absolute;
+    bottom: 10px;
+    right: 15px;       
+    color: #ffffff;
+    font-family: 'bebas neue', sans-serif;  
+    font-weight: bold;
+    border-radius: 2px;    
+    letter-spacing: 1px;
+    padding: 5px 10px; 
+    border: 2px solid #ffffff;
+    filter: drop-shadow(1px 1px 7px #212121);    
+    
+}
+.about-slider__image {    
     display: flex;
     flex-shrink: 1;
     width: 100%;  
     height: 100%;      
 }
 
-.about__small-text {
-    font-size: 18px; 
-    background-color: #D6197E;
-    color: #ffffff; 
-    padding: 5px 10px; 
-    text-align: center;       
-}
 .features {
     list-style: none;
     padding: 0;
