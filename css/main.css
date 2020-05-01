@@ -7,6 +7,7 @@
          url('../fonts/bebasneueregular-webfont.ttf') format('truetype');
     font-weight: bold;
     font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
@@ -18,6 +19,7 @@
          url('../fonts/bebasneueregular-webfont.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
+    font-display: swap;
 }
 
 body {
@@ -155,9 +157,7 @@ b, strong {
     display: flex;    
     text-decoration: none;       
 }
-.logo:hover {
-    
-}
+
 .logo__text {
     text-align: center;
     margin-left: 5px;
@@ -637,6 +637,7 @@ b, strong {
     color: #212121;
 }
 .adress__list {
+    margin-top: 10px;
     list-style: none;
     padding: 0;
 }
