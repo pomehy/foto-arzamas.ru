@@ -50,6 +50,11 @@ b, strong {
     margin-bottom: 25px;
     text-align: center;
 }
+.section-anchor {
+    display: block;
+    margin-bottom:158px;
+    margin-top:-158px
+}
 
 /* ---- header-top ---- */
 .page-header {
