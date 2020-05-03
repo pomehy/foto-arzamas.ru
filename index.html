@@ -64,7 +64,7 @@
                         </a>
                     </li>
                 </ul>
-            </div>            
+            </div>                        
         </div>        
         <nav class="header-nav navbar navbar-expand-md">
             <div class="main-nav container">
@@ -104,53 +104,11 @@
                 </div>
             </div>            
         </nav>                       
-    </header>
-    <a id="top" style="display:block; margin-bottom:120px; margin-top:-120px"></a> 
-    <main class="page-main">  
-        <!-- Modal question -->
-        <div class="modal fade" id="question" tabindex="-1" role="dialog" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered modal-question" role="document">
-                <div class="modal-content modal-question__content">
-                    <div class="modal-question__header">
-                        <p class="modal-question__title">Форма обратной связи</p>
-                        <p class="modal-question__subtitle" >Остались вопросы?<br>Задайте их нашему специалисту!</p> 
-                    </div>
-                    <div class="modal-question__body">
-                        <form class="question-form" name="question-form">
-                            <!-- Hidden Required Fields -->
-                            <input type="hidden" name="project_name" value="foto-arzamas.ru">
-                            <input type="hidden" name="admin_email" value="mail@foto-arzamas">
-                            <input type="hidden" name="form_subject" value="Вопрос с сайта foto-arzamas.ru">
-                            <!-- END Hidden Required Fields -->
-                            <div class="question-form__input">
-                                <input type="text" name="name" class="form-control" placeholder="Введите имя" required>
-                            </div>                                                          
-                            <div class="question-form__input">
-                                <input type="tel" name="phone" id="phone" class="form-control" placeholder="Введите телефон" required>
-                            </div>                           
-                            <textarea class="form-control question-form__textarea" name="message" cols="40" rows="5" placeholder="Укажите вопрос"></textarea>
-                            <input name="bezspama" type="text" style="display:none" value=""> 
-                            <input class="modal-question__button button" type="submit" value="Отправить">
-                        </form>                                               
-                    </div>
-                    <div class="modal-question__footer">
-                        <p class="modal-question__text">Нажимая кнопку "Отправить", я принимаю условия
-                            <a href="policy/politica-dannie.docx">Пользовательского соглашения</a> и даю своё согласие
-                            на обработку моих
-                            персональных данных, в соответствии с Федеральным законом от 27.07.2006 года №152-ФЗ
-                            «О персональных данных».
-                        </p>
-                    </div>
-                    <button type="button" class="close button-close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>                               
-                </div>
-                
-            </div>
-        </div>
-        <!-- Modal question end -->
+    </header>    
+    <main class="page-main"> 
+        <a id="top" class="section-anchor"></a>        
         <h1 class="visually-hidden">Фотосалон в Арзамасе - печать фото, фото на документы, сувениры</h1>
-        <section class="intro section-padding">
+        <section class="intro section-padding">            
             <div class="intro__content container">
                 <h2 class="intro__title">"Яркие фото"<br>территория качества и стиля</h2>
                 <p class="intro__text">
@@ -158,9 +116,9 @@
                 </p> 
                 <span class="intro__feature">Работаем для вас с 2010 года</span>                
             </div>
-        </section>        
-        <a id="about" style="display:block; margin-bottom:118px; margin-top:-118px"></a> 
+        </section>                
         <section class="about section-padding ">
+            <a id="about" class="section-anchor"></a> 
             <div class="about-wrapper container">
                 <h2 class="about__title section-title">Фотосалон "Яркие фото"</h2>                
                 <div class="row">                    
@@ -207,9 +165,9 @@
                     </div>
                 </div> 
             </div>
-        </section>
-        <a id="offer" style="display:block; margin-bottom:120px; margin-top:-120px"></a> 
+        </section>        
         <section class="offer section-padding">
+            <a id="offer" class="section-anchor"></a> 
             <div class="offer-wrapper container">
                 <h2 class="offer__title section-title">Наши услуги</h2>
                 <ul class="offer__list row">                    
@@ -1258,9 +1216,9 @@
                     </li>
                 </ul>
             </div> 
-        </section>
-        <a id="reviews" style="display:block; margin-bottom:120px; margin-top:-120px"></a> 
+        </section>        
         <section class="reviews section-padding">
+            <a id="reviews" class="section-anchor"></a> 
             <div class="reviews-content-wrapper container">
                 <h2 class="reviews__title section-title">Отзывы наших клиентов</h2>
                 <div class="reviews-slider-wrapper">
@@ -1365,9 +1323,9 @@
                     </li>                     
                 </ul>
             </div>
-        </section>
-        <a id="contacts" style="display:block; margin-bottom:117px; margin-top:-117px"></a> 
+        </section>        
         <section class="contacts section-padding container">
+            <a id="contacts" class="section-anchor"></a> 
             <h2 class="contacts__title section-title">Контакты</h2>            
             <div class="row">
                 <div class="col-md-6">
@@ -1403,7 +1361,49 @@
                     <iframe class="contacts__map" src="https://yandex.ru/map-widget/v1/-/CGdovQ-B" allowfullscreen></iframe>            
                 </div>
             </div>            
-        </section>        
+        </section> 
+        <!-- Modal question -->
+        <div class="modal fade" id="question" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-question" role="document">
+                <div class="modal-content modal-question__content">
+                    <div class="modal-question__header">
+                        <p class="modal-question__title">Форма обратной связи</p>
+                        <p class="modal-question__subtitle" >Остались вопросы?<br>Задайте их нашему специалисту!</p> 
+                    </div>
+                    <div class="modal-question__body">
+                        <form class="question-form" name="question-form">
+                            <!-- Hidden Required Fields -->
+                            <input type="hidden" name="project_name" value="foto-arzamas.ru">
+                            <input type="hidden" name="admin_email" value="mail@foto-arzamas">
+                            <input type="hidden" name="form_subject" value="Вопрос с сайта foto-arzamas.ru">
+                            <!-- END Hidden Required Fields -->
+                            <div class="question-form__input">
+                                <input type="text" name="name" class="form-control" placeholder="Введите имя" required>
+                            </div>                                                          
+                            <div class="question-form__input">
+                                <input type="tel" name="phone" id="phone" class="form-control" placeholder="Введите телефон" required>
+                            </div>                           
+                            <textarea class="form-control question-form__textarea" name="message" cols="40" rows="5" placeholder="Укажите вопрос"></textarea>
+                            <input name="bezspama" type="text" style="display:none" value=""> 
+                            <input class="modal-question__button button" type="submit" value="Отправить">
+                        </form>                                               
+                    </div>
+                    <div class="modal-question__footer">
+                        <p class="modal-question__text">Нажимая кнопку "Отправить", я принимаю условия
+                            <a href="policy/politica-dannie.docx">Пользовательского соглашения</a> и даю своё согласие
+                            на обработку моих
+                            персональных данных, в соответствии с Федеральным законом от 27.07.2006 года №152-ФЗ
+                            «О персональных данных».
+                        </p>
+                    </div>
+                    <button type="button" class="close button-close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>                               
+                </div>
+                
+            </div>
+        </div>
+        <!-- Modal question end -->       
     </main>
     <footer class="page-footer">
         <div class="container">
@@ -1459,9 +1459,7 @@
                 <p class="copyright__copy-text">© Сеть фотосалонов "ЯРКИЕ ФОТО". ИП Суханов Е.В.</p>
                 
             </div>
-
         </div>
-
     </footer>  
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
