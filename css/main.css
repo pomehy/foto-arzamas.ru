@@ -58,7 +58,7 @@ b, strong {
 
 /* ---- header-top ---- */
 .page-header {
-    box-shadow: 0 1px 5px #212121c7;
+    box-shadow: 0 1px 5px rgba(33,33,33,1);      
 }
 .header-top {
     background-color: #212121;   
@@ -114,7 +114,7 @@ b, strong {
     }  
     
     50% {        
-        box-shadow: 0px 0px 5px 3px #D6197E;
+        box-shadow: 0px 0px 5px 3px rgba(214, 25, 126, 1);
     }  
      
     100% {
@@ -322,7 +322,7 @@ b, strong {
     justify-content: center;
     border: 10px solid #ffffff;    
     padding: 40px;    
-    box-sizing: border-box;
+    box-sizing: border-box;    
     height: auto;
 }
 .intro__title {
@@ -358,7 +358,7 @@ b, strong {
 .about-image-wrapper {     
     border: 9px solid #F7F7F7;     
     box-sizing: border-box;  
-    box-shadow: 0 0 6px #212121;
+    box-shadow: 0 0 6px rgba(33, 33, 33, 1);
     height: 100%;
         
 }
@@ -414,8 +414,7 @@ b, strong {
 }
 .offer-wrapper {
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    flex-direction: column;    
 }
 
 .offer__list {
@@ -429,13 +428,12 @@ b, strong {
 .offer__card {
     background-color: #ffffff;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    flex-direction: column;    
     padding: 10px;    
     margin-bottom: 30px;
     text-align: center;
     box-sizing: border-box;
-    box-shadow: 1px 1px 5px 2px rgba(34, 60, 80, 0.2);
+    box-shadow: 1px 1px 5px 2px rgba(34, 60, 80, 0.2);    
 }
 .offer__card:hover {
     box-shadow: 5px 5px 15px 5px rgba(34, 60, 80, 0.2);
@@ -448,13 +446,13 @@ b, strong {
     font-family: 'bebas neue', sans-serif;
 }
 
-.offer__description {
+.offer__description {    
     margin: 0 0 1em 0;
+    font-weight: 400;    
 }
 .button {
     border-radius: 0.4em;
-    background-color: hsl(50,100%,50%);
-    
+    background-color: hsl(50,100%,50%);    
 }
 .button:hover {    
     background-color: hsl(50,100%,45%);
@@ -515,7 +513,7 @@ b, strong {
 .product__table th:not(:first-child), .product__table td:not(:first-child)  {
     text-align: right;
 }
-.reviews-content-wrapper {
+.reviews-content-wrapper {    
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -542,11 +540,12 @@ b, strong {
     margin-left: 15px;
     margin-right: 15px;
 }
-.reviews-slider-wrapper {
-    display: flex;
+.reviews-slider-wrapper {    
+    display: flex;    
     max-width: 80%;    
 }
 .reviews-slider__control {    
+    
     display: flex;    
     align-items: center;    
 }
@@ -567,7 +566,7 @@ b, strong {
 .reviews-slider__list {
     padding: 0;
 }
-.autor {
+.autor {    
     display: flex;       
     align-items: center;
 }
