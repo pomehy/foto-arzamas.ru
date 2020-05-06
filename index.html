@@ -14,26 +14,7 @@
     <link rel="stylesheet" href="css/bootstrap-grid.css">
     <link rel="stylesheet" href="css/main.css">    
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap&subset=cyrillic-ext" rel="stylesheet">
-    <title>Фотосалон "Яркие Фото". Печать фото, фотоподарки, фото на документы в Арзамасе.</title>
-    <!-- Yandex.Metrika counter -->
-    <script>
-        (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
-        m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
-        (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
-
-        ym(57050635, "init", {
-            clickmap:true,
-            trackLinks:true,
-            accurateTrackBounce:true,
-            webvisor:true
-        });
-    </script>
-    <noscript>
-        <div>
-            <img src="https://mc.yandex.ru/watch/57050635" style="position:absolute; left:-9999px;" alt="">
-        </div>
-    </noscript>
-    <!-- /Yandex.Metrika counter -->
+    <title>Фотосалон "Яркие Фото". Печать фото, фотоподарки, фото на документы в Арзамасе.</title>    
 </head>
 <body>
     <header class="page-header fixed-top"> 
@@ -1378,9 +1359,11 @@
                             <input type="hidden" name="form_subject" value="Вопрос с сайта foto-arzamas.ru">
                             <!-- END Hidden Required Fields -->
                             <div class="question-form__input">
-                                <input type="text" name="name" class="form-control" placeholder="Введите имя" required>
+                                <label class="visually-hidden" for="question-name">Имя:</label>
+                                <input type="text" name="name" id="question-name" class="form-control" placeholder="Введите имя" required>
                             </div>                                                          
                             <div class="question-form__input">
+                                <label class="visually-hidden" for="phone">Телефон:</label>
                                 <input type="tel" name="phone" id="phone" class="form-control" placeholder="Введите телефон" required>
                             </div>                           
                             <textarea class="form-control question-form__textarea" name="message" cols="40" rows="5" placeholder="Укажите вопрос"></textarea>
@@ -1460,7 +1443,26 @@
                 
             </div>
         </div>
-    </footer>  
+    </footer>
+    <!-- Yandex.Metrika counter -->
+    <script>
+        (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+        m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+        (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+        ym(57050635, "init", {
+            clickmap:true,
+            trackLinks:true,
+            accurateTrackBounce:true,
+            webvisor:true
+        });
+    </script>
+    <noscript>
+        <div>
+            <img src="https://mc.yandex.ru/watch/57050635" style="position:absolute; left:-9999px;" alt="">
+        </div>
+    </noscript>
+    <!-- /Yandex.Metrika counter -->  
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
