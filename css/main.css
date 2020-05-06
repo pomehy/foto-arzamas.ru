@@ -303,8 +303,7 @@ b, strong {
     right: 15px; 
 }
 .intro {    
-    display: flex;
-    justify-content: center;
+    display: flex;    
     align-items: center;
     height: 100vh;
     background-image: url(../img/content-img/intro-bg-1.jpg);
@@ -545,6 +544,7 @@ b, strong {
 .reviews-slider {
     margin-left: 15px;
     margin-right: 15px;
+    max-width: 100%;
 }
 .reviews-slider-wrapper {    
     display: flex;    
@@ -573,9 +573,10 @@ b, strong {
 .reviews-slider__list {
     padding: 0;
 }
-.autor {    
-    display: flex;       
+.autor {          
     align-items: center;
+    min-width: 848px;
+    max-width: 100%;
 }
 .autor__photo {
     display: block;
@@ -831,6 +832,9 @@ hr {
     }
     .offer__description {
         font-size: 15px;
+    }
+    .autor {
+        min-width: auto;
     }
     .autor__text {         
         height: 144px;
