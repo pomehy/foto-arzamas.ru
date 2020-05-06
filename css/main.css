@@ -104,7 +104,8 @@ b, strong {
     font-size: 13px;  
     animation: glowing 2000ms infinite;     
 }
-.header-top__button:hover {
+.header-top__button:hover,
+.header-top__button:focus {
     opacity: 0.8;
 }
 
@@ -134,7 +135,8 @@ b, strong {
     display: inline-block;
     margin-left: 5px;
 }
-.social__icon:hover {
+.social__icon:hover,
+.social__icon:focus {
     opacity: 0.8;
 }
 
@@ -435,7 +437,8 @@ b, strong {
     box-sizing: border-box;
     box-shadow: 1px 1px 5px 2px rgba(34, 60, 80, 0.2);    
 }
-.offer__card:hover {
+.offer__card:hover,
+.offer__card:focus {
     box-shadow: 5px 5px 15px 5px rgba(34, 60, 80, 0.2);
 }
 
@@ -454,7 +457,8 @@ b, strong {
     border-radius: 0.4em;
     background-color: hsl(50,100%,50%);    
 }
-.button:hover {    
+.button:hover,
+.button:focus {    
     background-color: hsl(50,100%,45%);
 }
 .offer__link {
@@ -478,7 +482,8 @@ b, strong {
 .modal-offer__button--close {
     background-color: rgba(185, 184, 184, 0.8);
 }
-.modal-offer__button--close:hover {
+.modal-offer__button--close:hover,
+.modal-offer__button--close:focus {
     background-color: rgba(185, 184, 184, 1);
 }
 .product__image-wrapper {
@@ -532,7 +537,8 @@ b, strong {
     border: 1px dashed #4680C2;
    
 }
-.reviews__link:hover {
+.reviews__link:hover,
+.reviews__link:focus {
     opacity: 0.8;
 }
 
@@ -554,7 +560,8 @@ b, strong {
     width: 20px;
     height: 50px; 
 }
-.reviews-slider__control-icon:hover {
+.reviews-slider__control-icon:hover,
+.reviews-slider__control-icon:focus {
     opacity: 0.8;
 }
 
@@ -673,7 +680,8 @@ b, strong {
 .logo--footer p {
     color: #ffffff;     
 }
-.logo--footer:hover {
+.logo--footer:hover,
+.logo--footer:focus {
     opacity: 0.8;   
 }
 .footer-nav {
@@ -696,7 +704,8 @@ b, strong {
 .footer-nav__link:last-child {
     margin-bottom: 0;
 }
-.footer-nav__link:hover {
+.footer-nav__link:hover,
+.footer-nav__link:focus {
     opacity: 0.8;
     color: #FFD501;
 }
@@ -713,7 +722,8 @@ b, strong {
     padding: 15px 40px;
     border: 1px dashed #F7F7F7;
 }
-.footer-nav__price-link:hover {
+.footer-nav__price-link:hover,
+.footer-nav__price-link:focus {
     opacity: 0.8;
     color: #FFD501;
     border: 1px dashed #FFD501;
