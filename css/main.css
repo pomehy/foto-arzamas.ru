@@ -837,7 +837,7 @@ hr {
         min-width: auto;
     }
     .autor__text {         
-        height: 144px;
+        min-height: 144px;
     }
     .contacts__map {
         height: 400px;
@@ -889,7 +889,7 @@ hr {
     }
     .autor__text {
         text-align: center;
-        height: 126px;
+        min-height: 126px;
     }    
     .contacts {        
         padding: 40px 15px 15px 15px;
@@ -925,7 +925,7 @@ hr {
         padding: 0.5rem 1rem;
     }   
     .autor__text {        
-        height: 130px;
+        min-height: 130px;
     }    
     .contacts__map {
         height: 300px;
@@ -950,7 +950,7 @@ hr {
     }    
     .autor__text {     
         font-size: 15px;   
-        height: 140px;
+        min-height: 140px;
     }
     .modal-offer__button {
         width: 100%;
@@ -974,7 +974,7 @@ hr {
     }
     .autor__text {   
         font-size: 14px;        
-        height: 145px;
+        min-height: 145px;
     }
     .product__table {
         font-size: 14px;
